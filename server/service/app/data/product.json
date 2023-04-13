@@ -1,0 +1,82 @@
+{
+  "products": [
+    {
+      "id":1,
+      "name": "yoga 7i",
+      "description": "Stylist portability & performance",
+      "price" : 15000000,
+      "mainImg": "https://www.yangcanggih.com/wp-content/uploads/2022/01/Lenovo-YOGA-6-2022-1.jpg",
+      "categoryId": 1,
+      "authorId":1
+    },
+    {
+      "id": 2,
+      "name": "iPhone 13",
+      "description": "Latest iPhone with A15 Bionic chip",
+      "price" : 9990000,
+      "mainImg": "https://cdn.eraspace.com/media/catalog/product/i/p/iphone_13_blue_1_1.jpg",
+      "categoryId": 2,
+      "authorId": 1
+    },
+    {
+      "id": 3,
+      "name": "Samsung Galaxy S21",
+      "description": "Flagship Android phone with Exynos 2100 processor",
+      "price" : 11990000,
+      "mainImg": "https://images.samsung.com/id/smartphones/galaxy-s21/buy/s21_family_kv_mo_img.jpg",
+      "categoryId": 2,
+      "authorId": 1
+    }
+  ],
+  "users":[
+    {
+    "id":1,
+    "username":"admin",
+    "email":"admin@gmail.com",
+    "password":"12345",
+    "role": "admin",
+    "phoneNumber": "0213012301230",
+    "address": "jln. Bogen no.65"
+    } 
+  ],
+  "images":[
+    {
+        "id":1,
+        "productId": 1,
+        "imgUrl": "https://www.yangcanggih.com/wp-content/uploads/2022/01/Lenovo-YOGA-6-2022-1.jpg"
+    },
+    {
+        "id":2,
+        "productId": 1,
+        "imgUrl": "https://www.yangcanggih.com/wp-content/uploads/2022/01/Lenovo-YOGA-6-2022-1.jpg"
+    },
+    {
+        "id":3,
+        "productId": 1,
+        "imgUrl": "https://www.yangcanggih.com/wp-content/uploads/2022/01/Lenovo-YOGA-6-2022-1.jpg"
+    },
+    {
+        "id":4,
+        "productId": 1,
+        "imgUrl": "https://www.yangcanggih.com/wp-content/uploads/2022/01/Lenovo-YOGA-6-2022-1.jpg"
+    }
+  ],
+  "categories":[
+    {
+        "id":1,
+        "name":"Laptop"
+    },
+    {
+        "id":2,
+        "name":"SmartPhone"
+    },
+    {
+        "id":3,
+        "name":"Tablet"
+    },
+    {
+        "id":4,
+        "name":"Monitor"
+    }
+  ]
+}

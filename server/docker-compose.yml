@@ -1,0 +1,29 @@
+services:
+  app-service:
+    build: ./service/app
+    container_name: app-service
+    ports:
+      - "4002:4002"
+    environment:
+      - NODE_ENV=production
+      - DATABASE_URL=${DATABASE_URL}
+  user-service:
+    build: ./service/users
+    container_name: user-service
+    ports:
+      - "4001:4001"
+    environment:
+      - NODE_ENV=production
+      - DATABASE_URL_MONGO=${DATABASE_URL_MONGO}
+  orchestrator:
+    build: ./orchestrator
+    container_name: orchestrator
+    ports:
+      - "80:80"
+    environment:
+      - NODE_ENV=production
+      - APP_URL=http://app-service:4002/
+      - USER_URL=http://user-service:4001/
+      - HOST_REDIS_URL=${HOST_REDIS}
+      - PORT_REDIS=${PORT_REDIS}
+      - PASS_REDIS=${PASS_REDIS}
